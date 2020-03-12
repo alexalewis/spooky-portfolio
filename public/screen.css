@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Josefun+Sans&display=swap');
 :root {
-  font: 16px / 1 sans-serif;
+  font: 16px;
 }
 
 html {
@@ -9,4 +10,82 @@ html {
 body {
   margin: 0;
   min-height: 100%;
+  background-color: #333;
+  font-family: 'Josefun Sans', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: left;
+  padding-left: 1rem;
+  padding-top: 3rem;
+  color: #d7d7d7;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+h1 {
+  width: 100%;
+  font-size: 3rem;
+  align-items: center;
+  text-align: center;
+  color: #d7d7d7;
+  margin-top: 8rem;
+  margin-bottom: 5rem;
+}
+
+.red {
+  color: #FD5C5B;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  color: #7a7a7a;
+  margin: auto;
+  flex-wrap: wrap;
+  width: 90%;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+}
+
+ul li {
+  list-style: none;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.images {
+  padding: 1rem;
+}
+
+section h3 {
+  display: flex;
+  justify-content: center;
+  color: #d7d7d7;
+  font-size: 3rem;
+  margin-top: 6rem;
+}
+
+.touch {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  color: #d7d7d7;
+  background-color: black;
+  border: none;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
 }
