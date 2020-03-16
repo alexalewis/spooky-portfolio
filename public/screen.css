@@ -14,7 +14,8 @@ body {
   font-family: 'Josefun Sans', sans-serif;
 }
 
-header {
+.mobile,
+.tablet {
   display: flex;
   justify-content: left;
   padding-left: 1rem;
@@ -35,7 +36,7 @@ h1 {
 }
 
 .red {
-  color: #FD5C5B;
+  color: #fd5c5b;
 }
 
 nav ul {
@@ -49,7 +50,7 @@ nav ul {
   margin-bottom: 3rem;
 }
 
-ul li {
+.nav-2 li {
   list-style: none;
   padding: 0.5rem;
   font-size: 1.1rem;
@@ -64,7 +65,7 @@ img {
   padding: 1rem;
 }
 
-section h3 {
+section h2 {
   display: flex;
   justify-content: center;
   color: #d7d7d7;
@@ -88,4 +89,76 @@ button {
   font-size: 1rem;
   margin-top: 1rem;
   margin-bottom: 5rem;
+}
+
+/* Media Queries */
+
+@media (min-width: 375px) {
+  .top-nav {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+  .top-nav {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 80%;
+  }
+
+  .tablet {
+    margin-left: 2rem;
+  }
+
+  .top {
+    display: flex;
+    justify-content: center;
+  }
+  .top-nav ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: -1rem;
+  }
+  .top-nav li {
+    color: rgb(88, 193, 225);
+    font-size: 1rem;
+    list-style: none;
+    padding-top: 3.5rem;
+  }
+  .top-nav button {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
+
+  h1 {
+    width: 65%;
+    margin-left: 9rem;
+    margin-top: -1rem;
+  }
+  .images ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .images li {
+    flex-basis: 50%;
+    list-style: none;
+    padding-bottom: 1rem;
+  }
+
+  img {
+    width: 95%;
+    height: auto;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
 }
